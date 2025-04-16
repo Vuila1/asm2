@@ -23,28 +23,26 @@
             font-size: 6rem;
             font-weight: 700;
             text-transform: uppercase;
-            background: linear-gradient(90deg, red, orange, yellow, green, cyan, blue, violet);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            animation: rgbShift 3s infinite, blink-animation 1s steps(2, start) infinite;
+            animation: rgbColor 2s infinite; /* Áp dụng hiệu ứng */
+            color: red; /* Màu ban đầu */
             text-shadow: 0 0 10px rgba(255, 255, 255, 0.6), 0 0 20px rgba(255, 255, 255, 0.4);
         }
 
-        @keyframes rgbShift {
+        @keyframes rgbColor {
             0% {
-                background-position: 0% 50%;
+                color: red;
+            }
+            25% {
+                color: orange;
             }
             50% {
-                background-position: 100% 50%;
+                color: green;
+            }
+            75% {
+                color: blue;
             }
             100% {
-                background-position: 0% 50%;
-            }
-        }
-
-        @keyframes blink-animation {
-            to {
-                visibility: hidden;
+                color: violet;
             }
         }
     </style>
