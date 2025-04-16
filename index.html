@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello - RGB Modern</title>
+    <style>
+        /* Importing a modern Google Font */
+        @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: white; /* White background */
+            font-family: 'Rubik', sans-serif; /* Modern font */
+            overflow: hidden;
+        }
+
+        h1 {
+            font-size: 6rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            background: linear-gradient(90deg, red, orange, yellow, green, cyan, blue, violet);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: rgbShift 3s infinite;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.6), 0 0 20px rgba(255, 255, 255, 0.4);
+        }
+
+        @keyframes rgbShift {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+<h1>Hello</h1>
+</body>
+</html>
