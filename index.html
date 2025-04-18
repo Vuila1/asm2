@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello - RGB Modern</title>
+    <title>Anh Kiệt Lab 8</title>
     <style>
-        /* Importing a modern Google Font */
-        @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+        /* Importing Google Font */
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 
         body {
             display: flex;
@@ -14,40 +14,22 @@
             align-items: center;
             height: 100vh;
             margin: 0;
-            background-color: white; /* White background */
-            font-family: 'Rubik', sans-serif; /* Modern font */
-            overflow: hidden;
+            background: radial-gradient(circle, #ff9a9e, #fad0c4, #fbc2eb);
+            font-family: 'Roboto', sans-serif;
         }
 
         h1 {
-            font-size: 6rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            animation: rgbColor 2s infinite; /* Áp dụng hiệu ứng */
-            color: red; /* Màu ban đầu */
-            text-shadow: 0 0 10px rgba(255, 255, 255, 0.6), 0 0 20px rgba(255, 255, 255, 0.4);
+            font-size: 5rem;
+            font-weight: bold;
+            color: white;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.6);
+            animation: glowEffect 1.5s ease-in-out infinite alternate;
         }
 
-        @keyframes rgbColor {
-            0% {
-                color: red;
+        @keyframes glowEffect {
+            from {
+                text-shadow: 0 0 10px rgba(255, 255, 255, 0.6), 0 0 20px rgba(255, 255, 255, 0.4);
             }
-            25% {
-                color: orange;
-            }
-            50% {
-                color: green;
-            }
-            75% {
-                color: blue;
-            }
-            100% {
-                color: violet;
-            }
-        }
-    </style>
-</head>
-<body>
-<h1>Hello</h1>
-</body>
-</html>
+            to {
+                text-shadow: 0 0 30px rgba(255,*
+
